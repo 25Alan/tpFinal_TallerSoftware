@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: white;
+  color: var(--color-secondary-1-2);
 }
 
 body {
@@ -16,7 +16,7 @@ body {
 
 form {
   position: absolute;
-  background-color: var(--color-secondary-2-1);
+  background-color: var(--color-secondary-2-1) !important;
   top: 50%;
   left: 50%;
   width: 30%;
@@ -34,11 +34,43 @@ fieldset {
 }
 
 #set1Form {
+  position: relative;
+  margin: 0 0 1rem 0;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   height: 40%;
   width: 70%;
+}
+
+#set1Form input {
+  width: 350px;
+  height: 60px;
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 0 15px;
+  background: transparent;
+  border: 2px solid green;
+  outline: none;
+}
+
+#set1Form label {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  color: white;
+  font-size: 20px;
+  pointer-events: none;
+  transition: .3s;
+}
+
+#set1Form label ~ input:focus {
+  top: 0;
+  left: 15px;
+  font-size: 15px;
+  padding: 0 2px;
+  background-color: black;
 }
 
 #set2Form {
@@ -48,19 +80,22 @@ fieldset {
   align-items: start;
 }
 
-label input[type="checkbox"] {
-  margin-left: 10px;
-}
-
 #set3Form {
   display: flex;
-  width: 50%;
+  width: 70%;
   justify-content: space-between;
 }
 
 button {
-  background-color: gray;
+  background-color: var(--color-primary-1);
   padding: 0.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  transition: opacity 400ms;
+}
+
+button:hover {
+  opacity: 0.6;
 }
 
 footer {
@@ -70,6 +105,6 @@ footer {
   align-items: end;
 }
 
-footer a {
+footer a{
   padding: 0.5rem;
 }

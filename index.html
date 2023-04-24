@@ -7,6 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="./css/login.css">
+  <link rel="stylesheet" href="./css/general/normalize.css">
+  <link rel="stylesheet" href="./css/general/reset.css">
 
   <title>TP-FINAL-SOFTWARE-TALLER</title>
 </head>
@@ -16,12 +18,14 @@
   <body>
     <form>
       <fieldset id="set1Form">
-        <input type="text" id="inputUser" placeholder="User">
-        <input type="password" id="inputPassword" placeholder="Password">
+        <label for="inputUset">User</label>
+        <input type="text" id="inputUser">
+        <!-- <label for="inputPassword">Password</label>
+        <input type="password" id="inputPassword"> -->
       </fieldset>
       <fieldset id="set2Form">
         <label> Remember session<input type="checkbox" id="rememberCheck"></label>        
-        <button id="buttonGo">SIGN IN</button>
+        <button id="buttonGo">Sign in</button>
       </fieldset> 
       <fieldset id="set3Form">
         <a href="#">I forgot my password</a>
@@ -34,7 +38,7 @@
     </footer>
   </body>
 
-  <script src="index.js" defer="true"></script>
+  <script src="./js/index.js" defer="true"></script>
 </body>
 
 </html>
