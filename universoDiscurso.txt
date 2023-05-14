@@ -1,6 +1,0 @@
-UNIVERSO DE DISCURSO - SISTEMA DE REGISTROS DE ACTIVOS FIJOS:
-
-Una empresa desea llevar un registro de los activos fijos que posee, puesto
-que los mismos representan una inversión significativa y precisan ser monitoreados; dicho registros constará de atributos como nombre del activo, descripción, fecha de adquisición, fecha de puesta en servicio, vida útil estimada, y ubicación.
-
-Es relevante para la empresa registrar la ubicación del activo dado que éste encontrarse en diferentes áreas lo cual influirá en su mantenimiento y monitoreo. También es crucial llevar un registro actualizado de su vida útil estimada y su consecuente planificación y presupuesto de reemplazo del mismo.
